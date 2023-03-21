@@ -1,0 +1,20 @@
+{
+  "name": "desarrollo_front_pro",
+  "version": "1.0.0",
+  "description": "[![GitHub issues](https://img.shields.io/github/issues/KeepCodingWeb14/html-css-practica)](https://github.com/KeepCodingWeb14/html-css-practica/issues)\r [![GitHub stars](https://img.shields.io/github/stars/KeepCodingWeb14/html-css-practica)](https://github.com/KeepCodingWeb14/html-css-practica/stargazers)",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "typescript": "^5.0.2"
+  },
+  "devDependencies": {
+    "webpack": "^5.76.2",
+    "webpack-cli": "^5.0.1"
+  }
+}
