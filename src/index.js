@@ -1,4 +1,4 @@
-import lodash from 'lodash/join';
+import join from 'lodash/join';
 
 const hello = 'Hello';
 const world = 'World';
