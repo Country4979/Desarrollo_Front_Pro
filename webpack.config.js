@@ -7,7 +7,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: {
         home: './src/home.js',
-        projectsPage: './src/projectsPage.js'
+        projectsPage: './src/projectsPage.js',
+        404: './src/404.js',
+        500: './src/500.js'
     },
     mode: 'development',
     devtool: 'inline-source-map',
@@ -38,6 +40,16 @@ module.exports = {
             template: 'src/templates/projects.html',
             filename: 'projects.html',
             chunks: ['projectsPage']
+        }),
+        new HtmlWebpackPlugin({
+            template: 'src/templates/404.html',
+            filename: '404.html',
+            chunks: ['404']
+        }),
+        new HtmlWebpackPlugin({
+            template: 'src/templates/500.html',
+            filename: '500.html',
+            chunks: ['500']
         }),
     ],
 };
