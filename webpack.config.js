@@ -23,7 +23,7 @@ module.exports = {
             {
                 test: /\.s?[ac]ss$/i,
                 //test: /\.(css|sass|scss)$/i,
-                use: ['style-loader', 'css-loader',] //Este orden es importante, de derecha a izquierda.
+                use: ['style-loader', 'css-loader', 'sass-loader'] //Este orden es importante, de derecha a izquierda.
             },
             {
                 test: /\.(png|jpg|gif)$/i,

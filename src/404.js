@@ -1,1 +1,1 @@
-import './css/404.css'
+import './scss/404.scss'

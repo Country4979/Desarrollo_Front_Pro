@@ -1,1 +1,1 @@
-import './css/500.css'
+import './scss/500.scss'
