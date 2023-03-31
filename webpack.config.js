@@ -16,12 +16,13 @@ module.exports = {
     output: {
         filename: '[name].[chunkhash].bundle.js',
         path: path.resolve(__dirname, 'dist'), //path: __dirname + '/dist',
-        clean: true
+        //clean: true,   // No es un problema quitar esto con el el webpack-server. Lo añadiremos en producción.
     },
     module: {
         rules: [
             {
-                test: /\.css$/i,
+                test: /\.s?[ac]ss$/i,
+                //test: /\.(css|sass|scss)$/i,
                 use: ['style-loader', 'css-loader',] //Este orden es importante, de derecha a izquierda.
             },
             {
@@ -33,7 +34,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: 'src/templates/index.html',
-            filename: 'home.html',
+            filename: 'index.html',
             chunks: ['home']
         }),
         new HtmlWebpackPlugin({
