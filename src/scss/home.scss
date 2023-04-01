@@ -1,8 +1,23 @@
-@import url('./reset.scss');
-@import url('./common.scss');
-@import url('./navbar.scss');
-@import url('./header.scss');
-@import url('./footer.scss');
-@import url('./form.scss');
-@import url('./skills.scss');
-@import url('./carousel.scss');
+//partials
+// _reset.scss
+// @forward '_reset.css'  --> Añade todas las importaciones a este archivo, de forma que no se generan todos los css "imprtados", sino uno solo.
+// @use '_reset.css'
+
+@forward './reset.scss';
+@forward './common.scss';
+@forward './navbar.scss';
+@forward './header.scss';
+@forward './footer.scss';
+@forward './form.scss';
+@forward './skills.scss';
+@forward './carousel.scss';
+
+
+//@import url('./reset.scss');
+//@import url('./common.scss');
+//@import url('./navbar.scss');
+//@import url('./header.scss');
+//@import url('./footer.scss');
+//@import url('./form.scss');
+//@import url('./skills.scss');
+//@import url('./carousel.scss');

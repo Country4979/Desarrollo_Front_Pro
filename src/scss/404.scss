@@ -1,5 +1,12 @@
-@import url('./reset.scss');
-@import url('./common.scss');
-@import url('./navbar.scss');
-@import url('./error.scss');
-@import url('./footer.scss');
+@forward './reset.scss';
+@forward './common.scss';
+@forward './navbar.scss';
+@forward './error.scss';
+@forward './footer.scss';
+
+
+//@import url('./reset.scss');
+//@import url('./common.scss');
+//@import url('./navbar.scss');
+//@import url('./error.scss');
+//@import url('./footer.scss');
